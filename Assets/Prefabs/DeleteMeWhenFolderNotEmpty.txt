@@ -1,0 +1,2 @@
+This file is only here so git will recognize an empty folder and upload it to git.  Not needed once this folder has
+another item in it.
