@@ -3,6 +3,8 @@ using System.Collections;
 
 [RequireComponent (typeof(Record))]
 public class Player : MonoBehaviour {
+
+    static readonly float GRAVITY = 9.81f;
     public float movementSpeed = 5;
     public float turningSpeed = 60;
     public float jumpForce = 8;
@@ -24,12 +26,12 @@ public class Player : MonoBehaviour {
         if(cc.isGrounded)
             gravity = 0f;
 
-        gravity -= 9.81f * Time.deltaTime;
+        gravity -= GRAVITY * Time.deltaTime;
 
         //Jump
         if (Input.GetKeyDown("space") && cc.isGrounded)
         {
-            gravity += 8;
+            gravity += jumpForce;
             recording.RegisterAction("jump");
         }
 
