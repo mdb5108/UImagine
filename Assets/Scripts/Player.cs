@@ -4,28 +4,35 @@ using System.Collections;
 public class Player : MonoBehaviour {
     public float movementSpeed = 5;
     public float turningSpeed = 60;
-    public bool IsGrounded;
+    public float jumpForce = 8;
 
-    void OnCollisionStay(Collision collisionInfo)
+    private float gravity;
+
+    private CharacterController cc;
+
+    private void Start()
     {
-        IsGrounded = true;
+        gravity = 0;
+        cc = GetComponent<CharacterController>();
     }
 
-    void OnCollisionExit(Collision collisionInfo)
-    {
-        IsGrounded = false;
-    }
     void Update()
     {
+        if(!cc.isGrounded)
+            gravity -= 9.81f * Time.deltaTime;
+        else
+            gravity = 0f;
+
+        //Jump
+        if (Input.GetKeyDown("space") && cc.isGrounded)
+        {
+            gravity += 8;
+        }
+
         float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
         transform.Rotate(0, horizontal, 0);
-        float vertical = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
-        transform.Translate(0, 0, vertical);
-        //Jump
-        if (Input.GetKeyDown("space") && IsGrounded)
-        {
-            //Debug.Log("Jump");
-            GetComponent<Rigidbody>().AddForce(new Vector2(0, 8), ForceMode.Impulse);
-        }
+
+        Vector3 vertical = Input.GetAxis("Vertical") * transform.forward * movementSpeed * Time.deltaTime;
+        cc.Move(vertical + gravity*Vector3.up*Time.deltaTime);
     }
 }
