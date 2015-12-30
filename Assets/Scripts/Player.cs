@@ -21,10 +21,10 @@ public class Player : MonoBehaviour {
 
     void Update()
     {
-        if(!cc.isGrounded)
-            gravity -= 9.81f * Time.deltaTime;
-        else
+        if(cc.isGrounded)
             gravity = 0f;
+
+        gravity -= 9.81f * Time.deltaTime;
 
         //Jump
         if (Input.GetKeyDown("space") && cc.isGrounded)
