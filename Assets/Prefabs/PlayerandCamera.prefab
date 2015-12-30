@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2337088}
   - 114: {fileID: 11422178}
   - 143: {fileID: 14312796}
+  - 114: {fileID: 11448048}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -200,6 +201,19 @@ MonoBehaviour:
   movementSpeed: 10
   turningSpeed: 60
   jumpForce: 8
+--- !u!114 &11448048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7bbdaa5f5190143a6fe5df5d390b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordDeltaTime: 0.1
+  records: []
 --- !u!124 &12497602
 Behaviour:
   m_ObjectHideFlags: 1
