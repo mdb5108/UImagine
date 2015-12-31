@@ -5,7 +5,6 @@ using System.Collections;
 [RequireComponent (typeof(Record))]
 public class Player : PlayerBase {
 
-    static readonly float GRAVITY = 9.81f;
     public float movementSpeed = 5;
     public float turningSpeed = 60;
     public float jumpForce = 8;
@@ -14,6 +13,20 @@ public class Player : PlayerBase {
 
     private CharacterController cc;
     private Record recording;
+
+    private static Player instance_;
+    public static Player Instance
+    {
+        get
+        {
+            if(instance_ == null)
+            {
+                instance_ = FindObjectOfType<Player>().GetComponent<Player>();
+            }
+
+            return instance_;
+        }
+    }
 
     protected override void Start()
     {
@@ -29,10 +42,10 @@ public class Player : PlayerBase {
         if(cc.isGrounded)
             gravity = 0f;
 
-        gravity -= GRAVITY * Time.deltaTime;
+        gravity -= GameManager.Instance.GRAVITY * Time.deltaTime;
 
         //Jump
-        if (Input.GetKeyDown("space") && cc.isGrounded)
+        if (Input.GetButton("Jump") && cc.isGrounded)
         {
             gravity += jumpForce;
             recording.RegisterAction("jump");
@@ -43,12 +56,6 @@ public class Player : PlayerBase {
 
         Vector3 vertical = Input.GetAxis("Vertical") * transform.forward * movementSpeed * Time.deltaTime;
         Move((x) => cc.Move(x), vertical + gravity*Vector3.up*Time.deltaTime);
-
-        if (Input.GetKeyDown("r"))
-        {
-            SaveRecording();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
 
     public void SaveRecording()
