@@ -9,6 +9,7 @@ public class Record : MonoBehaviour
 {
     public  float recordDeltaTime;
     private float curRecordTime;
+    private float startTime;
 
     private List<RecordData> records;
 
@@ -18,8 +19,8 @@ public class Record : MonoBehaviour
     // Use this for initialization
     private void Start ()
     {
-        curRecordTime = recordDeltaTime;
-        lastRecord = new RecordData(0, Vector3.zero, Vector3.zero, null);
+        curRecordTime = 0;
+        lastRecord = new RecordData(0, Vector3.zero, new Vector3(0, 0, 1f), null);
         records = new List<RecordData>();
         recorded = false;
     }
@@ -30,7 +31,7 @@ public class Record : MonoBehaviour
         curRecordTime -= Time.deltaTime;
         if(curRecordTime <= 0)
         {
-            MakeRecord(recordDeltaTime - curRecordTime, transform.position, transform.forward);
+            MakeRecord(Time.time, transform.position, transform.forward);
         }
     }
 
@@ -45,11 +46,16 @@ public class Record : MonoBehaviour
 
     public void RegisterAction(string action)
     {
-        MakeRecord(recordDeltaTime-curRecordTime, transform.position, transform.forward, action);
+        MakeRecord(Time.time, transform.position, transform.forward, action);
     }
 
-    private void MakeRecord(float timeSinceLast, Vector3 location, Vector3 facing, string action = "")
+    private void MakeRecord(float curTime, Vector3 location, Vector3 facing, string action = "")
     {
+        if(startTime == 0f)
+        {
+          startTime = curTime;
+        }
+
         if(recorded && action != "")
         {
             if(lastRecord.actions != null)
@@ -64,7 +70,7 @@ public class Record : MonoBehaviour
         }
         else
         {
-            lastRecord.timeSinceLast = timeSinceLast;
+            lastRecord.timeSinceBegin = curTime - startTime;
             lastRecord.location = location;
             lastRecord.facing = facing;
             if(action != "")
@@ -74,5 +80,10 @@ public class Record : MonoBehaviour
             curRecordTime = recordDeltaTime;
             recorded = true;
         }
+    }
+
+    public List<RecordData> GetRecords()
+    {
+      return records;
     }
 }
