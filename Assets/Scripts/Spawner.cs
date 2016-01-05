@@ -14,5 +14,6 @@ public class Spawner : MonoBehaviour
             go.GetComponent<Clone>().cloneIndex = i;
             go.transform.SetParent(transform);
         }
+        CameraManager.Instance.SetUpViewports();
     }
 }

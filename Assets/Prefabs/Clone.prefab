@@ -29,6 +29,7 @@ GameObject:
   - 20: {fileID: 2083874}
   - 92: {fileID: 9273726}
   - 124: {fileID: 12497602}
+  - 114: {fileID: 11498758}
   m_Layer: 0
   m_Name: CloneCamera
   m_TagString: Untagged
@@ -67,7 +68,7 @@ Camera:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140442}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
@@ -147,6 +148,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneIndex: 0
+--- !u!114 &11498758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1978a234f00c474d851cd312943312d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &12497602
 Behaviour:
   m_ObjectHideFlags: 1
@@ -175,7 +187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
