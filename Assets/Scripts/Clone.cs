@@ -47,9 +47,7 @@ public class Clone : PlayerBase
         }
         if(entered)
         {
-            if(previousRecord.facing == Vector3.zero)
-              Debug.Log(previousRecord.timeSinceBegin);
-            transform.forward = previousRecord.facing;
+            transform.rotation = previousRecord.rotation;
             Move((x) => transform.position = x, previousRecord.location);
         }
 
@@ -58,8 +56,20 @@ public class Clone : PlayerBase
         {
           t = 1f;
         }
-        Vector3 newDestination = Vector3.Lerp(previousRecord.location, currentRecord.location, t);
 
+        Vector3 newDestination = Vector3.Lerp(previousRecord.location, currentRecord.location, t);
         Move((x) => transform.position = x, newDestination);
+
+        Quaternion newRotation;
+        float angle = Quaternion.Angle(previousRecord.rotation, currentRecord.rotation);
+        if(angle == 0 || angle == 180)
+        {
+            newRotation = currentRecord.rotation;
+        }
+        else
+        {
+            newRotation = Quaternion.Lerp(previousRecord.rotation, currentRecord.rotation, t);
+        }
+        transform.rotation = newRotation;
     }
 }

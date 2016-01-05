@@ -20,7 +20,7 @@ public class Record : MonoBehaviour
     private void Start ()
     {
         curRecordTime = 0;
-        lastRecord = new RecordData(0, Vector3.zero, new Vector3(0, 0, 1f), null);
+        lastRecord = new RecordData(0, Vector3.zero, new Quaternion(), null);
         records = new List<RecordData>();
         recorded = false;
     }
@@ -31,7 +31,7 @@ public class Record : MonoBehaviour
         curRecordTime -= Time.deltaTime;
         if(curRecordTime <= 0)
         {
-            MakeRecord(Time.time, transform.position, transform.forward);
+            MakeRecord(Time.time, transform.position, transform.rotation);
         }
     }
 
@@ -46,10 +46,10 @@ public class Record : MonoBehaviour
 
     public void RegisterAction(string action)
     {
-        MakeRecord(Time.time, transform.position, transform.forward, action);
+        MakeRecord(Time.time, transform.position, transform.rotation, action);
     }
 
-    private void MakeRecord(float curTime, Vector3 location, Vector3 facing, string action = "")
+    private void MakeRecord(float curTime, Vector3 location, Quaternion rotation, string action = "")
     {
         if(startTime == 0f)
         {
@@ -72,7 +72,7 @@ public class Record : MonoBehaviour
         {
             lastRecord.timeSinceBegin = curTime - startTime;
             lastRecord.location = location;
-            lastRecord.facing = facing;
+            lastRecord.rotation = rotation;
             if(action != "")
                 lastRecord.actions = new string[]{ action };
             else
