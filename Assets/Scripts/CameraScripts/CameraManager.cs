@@ -13,14 +13,15 @@ public class CameraManager : MonoBehaviour
         {
             if(instance_ == null)
             {
-                var go = new GameObject("CameraManager (Instantiated)");
-                instance_ = go.AddComponent<CameraManager>();
+                instance_ = FindObjectOfType<CameraManager>();
+                Assert.IsTrue(instance_ != null, "You must place the CameraManager Prefab into the scene!");
             }
 
             return instance_;
         }
     }
 
+    public GameObject blankCamera;
     private List<Camera> cameras;
 
     private void Awake()
@@ -48,9 +49,16 @@ public class CameraManager : MonoBehaviour
             rects[n] = v;  
         }  
 
-        for(int i = 0; i < camerasSize; i++)
+        int i;
+        for(i = 0; i < camerasSize; i++)
         {
             cameras[i].rect = rects[i];
+        }
+        for(; i < rects.Length; i++)
+        {
+            Camera extra = (Instantiate(blankCamera, Vector3.zero, Quaternion.identity) as GameObject).GetComponent<Camera>();
+            extra.rect = rects[i];
+            extra.transform.SetParent(transform);
         }
     }
 
