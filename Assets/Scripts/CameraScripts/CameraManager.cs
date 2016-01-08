@@ -26,11 +26,13 @@ public class CameraManager : MonoBehaviour
 
     private void Awake()
     {
-        cameras = new List<Camera>();
     }
 
     public void RegisterCamera(Camera camera)
     {
+        if(cameras == null)
+          cameras = new List<Camera>();
+
         cameras.Add(camera);
     }
 
