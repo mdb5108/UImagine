@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class Clone : PlayerBase
 {
     public int cloneIndex;
+    public CloneCamera cloneCamera;
 
     private List<RecordData>        recording;
     private IEnumerator<RecordData> curRecording;
@@ -71,5 +72,25 @@ public class Clone : PlayerBase
             newRotation = Quaternion.Lerp(previousRecord.rotation, currentRecord.rotation, t);
         }
         transform.rotation = newRotation;
+
+        if(currentRecord.actions != null)
+        {
+            for(int i = 0; i < currentRecord.actions.Length; i++)
+            {
+                switch(currentRecord.actions[i])
+                {
+                    case "disappear":
+                      if(t >= 1f)
+                      {
+                          cloneCamera.GoBlack();
+                          this.gameObject.SetActive(false);
+                      }
+                      break;
+                    default:
+                      //Do Nothing
+                      break;
+                }
+            }
+        }
     }
 }

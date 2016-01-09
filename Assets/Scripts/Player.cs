@@ -60,6 +60,10 @@ public class Player : PlayerBase {
 
     public void SaveRecording()
     {
+        //TODO:
+        //Temporarily disappear on saving recording.  Should move this to when
+        //we hit a time medallion
+        recording.RegisterAction("disappear");
         RecordManager.Instance.AddRecord(recording.GetRecords());
     }
 }

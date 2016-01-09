@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneIndex: 0
+  cloneCamera: {fileID: 11498758}
 --- !u!114 &11479104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,6 +266,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 191886}
+    - target: {fileID: 0}
+      propertyPath: cloneCamera
+      value: 
+      objectReference: {fileID: 11498758}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105942}
