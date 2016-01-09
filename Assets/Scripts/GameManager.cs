@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour {
     {
         if (Input.GetButton("Restart"))
         {
-            Player.Instance.SaveRecording();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (Input.GetButton("Cancel"))
