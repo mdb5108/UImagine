@@ -4,6 +4,7 @@ using System.Collections;
 public class Spawner : MonoBehaviour
 {
     public GameObject clonePrefab;
+    public float timeFrozenAfterLast = 5f;
 
     private void Start()
     {
@@ -15,5 +16,6 @@ public class Spawner : MonoBehaviour
             go.transform.SetParent(transform);
         }
         CameraManager.Instance.SetUpViewports();
+        Player.Instance.DisconnectInput(timeFrozenAfterLast*count);
     }
 }

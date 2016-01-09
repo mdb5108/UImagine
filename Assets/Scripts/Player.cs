@@ -14,6 +14,9 @@ public class Player : PlayerBase {
     private CharacterController cc;
     private Record recording;
 
+    private bool disconnectInput;
+    private IEnumerator disconnectedInput;
+
     private static Player instance_;
     public static Player Instance
     {
@@ -26,6 +29,12 @@ public class Player : PlayerBase {
 
             return instance_;
         }
+    }
+
+    protected void Awake()
+    {
+        disconnectInput = false;
+        disconnectedInput = null;
     }
 
     protected override void Start()
@@ -45,16 +54,21 @@ public class Player : PlayerBase {
         gravity -= GameManager.Instance.GRAVITY * Time.deltaTime;
 
         //Jump
-        if (Input.GetButton("Jump") && cc.isGrounded)
+        if (!disconnectInput && Input.GetButton("Jump") && cc.isGrounded)
         {
             gravity += jumpForce;
             recording.RegisterAction("jump");
         }
+        float horizontal = 0;
+        Vector3 vertical = Vector3.zero;
 
-        float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
-        transform.Rotate(0, horizontal, 0);
+        if (!disconnectInput)
+        {
+          horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
+          transform.Rotate(0, horizontal, 0);
+          vertical = Input.GetAxis("Vertical") * transform.forward * movementSpeed * Time.deltaTime;
+        }
 
-        Vector3 vertical = Input.GetAxis("Vertical") * transform.forward * movementSpeed * Time.deltaTime;
         Move((x) => cc.Move(x), vertical + gravity*Vector3.up*Time.deltaTime);
     }
 
@@ -65,5 +79,29 @@ public class Player : PlayerBase {
         //we hit a time medallion
         recording.RegisterAction("disappear");
         RecordManager.Instance.AddRecord(recording.GetRecords());
+    }
+
+    private IEnumerator DisconnectInput_Coroutine(float time)
+    {
+        disconnectInput = true;
+        yield return new WaitForSeconds(time);
+        disconnectInput = false;
+    }
+
+    public void DisconnectInput(float time)
+    {
+        ConnectInput();
+        disconnectedInput = DisconnectInput_Coroutine(time);
+        StartCoroutine(disconnectedInput);
+    }
+
+    public void ConnectInput()
+    {
+        if(disconnectedInput != null)
+        {
+            StopCoroutine(disconnectedInput);
+            disconnectedInput = null;
+        }
+        disconnectInput = false;
     }
 }
