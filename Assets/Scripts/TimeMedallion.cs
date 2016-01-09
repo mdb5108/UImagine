@@ -21,13 +21,13 @@ public class TimeMedallion : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        medallions = GameObject.FindGameObjectsWithTag("Medallion");
-        foreach(GameObject item in medallions)
-        {
-            //index[i] = item.transform.position;
-            //i += 1;
-            print(item);
-        }
+        //medallions = GameObject.FindGameObjectsWithTag("Medallion");
+        //foreach(GameObject item in medallions)
+        //{
+        //    //index[i] = item.transform.position;
+        //    //i += 1;
+        //    print(item);
+        //}
 	}
 	
 	// Update is called once per frame
