@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class TimeMedallion : MonoBehaviour {
-    //private int i = 0;
+    private int i = 0;
     //Vector3 vector = new Vector3(0, 0, 0);
     public List<Vector3> index = new List<Vector3>();
     GameObject[] medallions;
@@ -24,8 +24,8 @@ public class TimeMedallion : MonoBehaviour {
         medallions = GameObject.FindGameObjectsWithTag("Medallion");
         foreach(GameObject item in medallions)
         {
-            //index[i] = item.transform.position;
-            //i += 1;
+            index[i] = item.transform.position;
+            i += 1;
             print(item);
         }
 	}
