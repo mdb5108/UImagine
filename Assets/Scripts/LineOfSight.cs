@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LineOfSight : MonoBehaviour
@@ -30,7 +31,7 @@ public class LineOfSight : MonoBehaviour
                     if (hit.collider.gameObject.tag == "Player")
                     {
                         playerInSight = true;
-                        Debug.Log("InSight");
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     }
                 }
             }

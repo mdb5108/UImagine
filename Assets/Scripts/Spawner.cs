@@ -4,7 +4,7 @@ using System.Collections;
 public class Spawner : MonoBehaviour
 {
     public GameObject clonePrefab;
-    public float timeFrozenAfterLast = 5f;
+    public float timeFrozenAfterLast = 4f;
 
     private void Start()
     {
