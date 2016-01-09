@@ -47,6 +47,7 @@ GameObject:
   - 81: {fileID: 8148598}
   - 114: {fileID: 11410402}
   - 114: {fileID: 11410018}
+  - 114: {fileID: 11499092}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -253,6 +254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recordDeltaTime: 0.1
+--- !u!114 &11499092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae39028ed91e2b4f9199e41d3f049d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 103428}
 --- !u!124 &12497602
 Behaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +313,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300288, guid: 287a522345dfc8e4d88aa0edcebaee29, type: 3}
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 103428}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105942}
