@@ -12,13 +12,12 @@ public class LineOfSight : MonoBehaviour
     {
         // Setting up the references.
         col = GetComponent<SphereCollider>();
-        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void OnTriggerStay(Collider other)
     {
         // If the player has entered the trigger sphere...
-        if (other.gameObject == player)
+        if (other.gameObject.tag == "Player")
         {
             playerInSight = false;
             Vector3 direction = other.transform.position - transform.position;
@@ -28,7 +27,7 @@ public class LineOfSight : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, direction.normalized, out hit, col.radius))
                 {
-                    if (hit.collider.gameObject == player)
+                    if (hit.collider.gameObject.tag == "Player")
                     {
                         playerInSight = true;
                         Debug.Log("InSight");
@@ -40,7 +39,7 @@ public class LineOfSight : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject.tag == "Player")
             // ... the player is not in sight.
             playerInSight = false;
     }
