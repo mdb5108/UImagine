@@ -7,4 +7,5 @@ using System.Collections.Generic;
 public class LevelPersistentData : ScriptableObject
 {
     public List<List<RecordData> > records;
+    public List<Vector3> indices = new List<Vector3>();
 };
