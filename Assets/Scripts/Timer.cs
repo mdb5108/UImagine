@@ -9,7 +9,6 @@ public class Timer : MonoBehaviour
     private int roundedRestSeconds;
     private float displaySeconds;
     private float displayMinutes;
-    public GUISkin skin;
     public int CountDownSeconds;
     private float TimeProgressed;
     private Text timertext;
