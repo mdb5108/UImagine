@@ -9,6 +9,10 @@ public class Player : PlayerBase {
     public float turningSpeed = 60;
     public float jumpForce = 8;
 
+    private bool inited = false;
+    private bool teleportSet = false;
+    private Vector3 teleportLocation;
+
     private float gravity;
 
     private CharacterController cc;
@@ -43,6 +47,10 @@ public class Player : PlayerBase {
         gravity = 0;
         cc = GetComponent<CharacterController>();
         recording = GetComponent<Record>();
+
+        if(teleportSet)
+            cc.transform.position = teleportLocation;
+        inited = true;
     }
 
     protected override void Update()
@@ -70,6 +78,19 @@ public class Player : PlayerBase {
         }
 
         Move((x) => cc.Move(x), vertical + gravity*Vector3.up*Time.deltaTime);
+    }
+
+    public void Teleport(Vector3 position)
+    {
+        if(!inited)
+        {
+            teleportSet = true;
+            teleportLocation = position;
+        }
+        else
+        {
+            cc.transform.position = position;
+        }
     }
 
     public void SaveRecording()
