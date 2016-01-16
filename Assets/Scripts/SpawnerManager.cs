@@ -24,12 +24,10 @@ public class SpawnerManager : MonoBehaviour
 
     public GameObject clonePrefab;
     public float timeFrozenAfterLast = 4f;
-    private bool inited = false;
 
     private void Start()
     {
-        if(!inited)
-            init();
+        init();
     }
 
     private void init()
