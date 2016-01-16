@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour {
     }
 
     public readonly float GRAVITY = 9.81f;
+    public void TimerZero()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
     private void Update()
     {
