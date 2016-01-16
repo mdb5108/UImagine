@@ -7,4 +7,5 @@ using System.Collections.Generic;
 public class LevelPersistentData : ScriptableObject
 {
     public List<List<RecordData> > records;
+    public Vector3[] spawnerIds;
 };
