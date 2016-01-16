@@ -36,6 +36,7 @@ public class SpawnerManager : MonoBehaviour
         {
             ids = (from spawn in FindObjectsOfType<Spawner>() select spawn.GetSpawnLocation()).ToArray();
             ArrayUtil.ShuffleArray(ids);
+            PersistentManager.Instance.GetLevelPersistentData().spawnerIds = ids;
         }
 
         int count = RecordManager.Instance.RecordCount();
