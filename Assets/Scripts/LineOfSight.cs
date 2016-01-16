@@ -30,6 +30,7 @@ public class LineOfSight : MonoBehaviour
                 {
                     if (hit.collider.gameObject.tag == "Player")
                     {
+                        GameManager.Instance.LifeLost();
                         playerInSight = true;
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                     }
