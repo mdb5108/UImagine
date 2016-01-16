@@ -14,7 +14,7 @@ public class TimeMedallion : MonoBehaviour {
         {
             Destroy(gameObject);
             Player.Instance.SaveRecording();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.Instance.NextIteration();
         }
        
     }

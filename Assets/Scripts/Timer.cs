@@ -41,9 +41,8 @@ public class Timer : MonoBehaviour
         }
         else if (roundedRestSeconds <= 0)
         {
-            GameManager.Instance.LifeLost();
             startTime = Time.time;
-            GameManager.Instance.TimerZero();
+            GameManager.Instance.LoseLifeRedo();
         }
         else
         {
