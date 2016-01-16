@@ -47,14 +47,7 @@ public class CameraManager : MonoBehaviour
         Rect[] rects = GetViewports(camerasSize);
 
         //Shuffle rectangles
-        int n = rects.Length;  
-        while (n > 1) {  
-            n--;  
-            int k = Random.Range(0, n+1);
-            Rect v  = rects[k];  
-            rects[k] = rects[n];  
-            rects[n] = v;  
-        }  
+        ArrayUtil.ShuffleArray(rects);
 
         viewports = rects;
 

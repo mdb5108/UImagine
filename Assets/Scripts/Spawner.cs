@@ -3,19 +3,10 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject clonePrefab;
-    public float timeFrozenAfterLast = 4f;
+    public GameObject spawnLocation;
 
-    private void Start()
+    public Vector3 GetSpawnLocation()
     {
-        int count = RecordManager.Instance.RecordCount();
-        for(int i = 0; i < count; i++)
-        {
-            GameObject go = (GameObject)Instantiate(clonePrefab, transform.position, transform.rotation);
-            go.GetComponent<Clone>().cloneIndex = i;
-            go.transform.SetParent(transform);
-        }
-        CameraManager.Instance.SetUpViewports();
-        Player.Instance.DisconnectInput(timeFrozenAfterLast*count);
+        return spawnLocation.transform.position;
     }
 }

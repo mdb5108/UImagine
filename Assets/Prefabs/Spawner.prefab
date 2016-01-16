@@ -52,6 +52,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &132352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494932}
+  m_Layer: 0
+  m_Name: SpawnLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &145492
 GameObject:
   m_ObjectHideFlags: 1
@@ -77,10 +92,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452186}
-  - 114: {fileID: 11479416}
+  - 114: {fileID: 11430472}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,6 +184,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483808}
+  - {fileID: 494932}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &462982
@@ -237,6 +253,18 @@ Transform:
   - {fileID: 480860}
   m_Father: {fileID: 452186}
   m_RootOrder: 0
+--- !u!4 &494932
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.73, y: 6.03, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 452186}
+  m_RootOrder: 1
 --- !u!23 &2320408
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -281,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ef005888a81f042a0c464f3099dec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11479416
+--- !u!114 &11430472
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -292,8 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4490debf0661eaa479c7de3bde31ab8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clonePrefab: {fileID: 105942, guid: bc1a9c1070d91244eb3ae492f5385b27, type: 2}
-  timeFrozenAfterLast: 4
+  spawnLocation: {fileID: 132352}
 --- !u!198 &19842470
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -7989,6 +8016,14 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnLocation
+      value: 
+      objectReference: {fileID: 132352}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148454}

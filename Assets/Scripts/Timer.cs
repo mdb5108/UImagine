@@ -9,7 +9,6 @@ public class Timer : MonoBehaviour
     private int roundedRestSeconds;
     private float displaySeconds;
     private float displayMinutes;
-    public GUISkin skin;
     public int CountDownSeconds;
     private float TimeProgressed;
     private Text timertext;
@@ -41,9 +40,8 @@ public class Timer : MonoBehaviour
         }
         else if (roundedRestSeconds <= 0)
         {
-            GameManager.Instance.LifeLost();
             startTime = Time.time;
-            GameManager.Instance.TimerZero();
+            GameManager.Instance.LoseLifeRedo();
         }
         else
         {

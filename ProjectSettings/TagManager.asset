@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Medallion
+  - Spawner
   layers:
   - Default
   - TransparentFX
