@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
-
     private static GameManager instance_;
     public static GameManager Instance
     {
@@ -24,7 +23,14 @@ public class GameManager : MonoBehaviour {
     }
 
     public readonly float GRAVITY = 9.81f;
-
+    public void TimerZero()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void LifeLost()
+    {
+        PersistentManager.Instance.GetLevelPersistentData().lifes -= 1;
+    }
     private void Update()
     {
         if (Input.GetButton("Restart"))

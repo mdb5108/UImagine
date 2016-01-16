@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MichaelTest.unity
   - enabled: 1
     path: Assets/Scenes/YueTestLevel.unity
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
