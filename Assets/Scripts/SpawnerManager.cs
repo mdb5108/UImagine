@@ -23,7 +23,6 @@ public class SpawnerManager : MonoBehaviour
     }
 
     public GameObject clonePrefab;
-    public float timeFrozenAfterLast = 4f;
 
     private void Start()
     {
@@ -56,6 +55,5 @@ public class SpawnerManager : MonoBehaviour
         {
             Player.Instance.Teleport(ids[ids.Length-1]);
         }
-        Player.Instance.DisconnectInput(timeFrozenAfterLast*count);
     }
 }
