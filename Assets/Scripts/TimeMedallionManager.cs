@@ -72,20 +72,6 @@ public class TimeMedallionManager : MonoBehaviour {
             }
         }
     }
-	public void DisableCollider (List<Vector3> index)
-    {
-
-        j = index.Count - 1;
-        for (i = 0; i < medallionLocation.Count; i++)
-        {
-            if (medallionLocation[i] == index[j])
-            {
-                findobject = "TimeMedallion" + i.ToString();
-                medallion = GameObject.Find(findobject);
-                medallion.GetComponent<Collider>().enabled = false;
-            }
-        }
-    }
 	// Update is called once per frame
 	void Update () {
         
