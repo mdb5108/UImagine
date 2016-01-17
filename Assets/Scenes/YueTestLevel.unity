@@ -10723,7 +10723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5719197a754038e438e1cc43373dde28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountDownSeconds: 10
+  CountDownSeconds: 30
 --- !u!1 &632221298
 GameObject:
   m_ObjectHideFlags: 0
@@ -12892,7 +12892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1892630844}
-  rotateSpeed: 3
+  rotateSpeed: 5
 --- !u!81 &773212413
 AudioListener:
   m_ObjectHideFlags: 0
@@ -13735,6 +13735,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1093703180}
   m_RootOrder: 0
+--- !u!1 &842267290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 842267292}
+  - 114: {fileID: 842267291}
+  m_Layer: 0
+  m_Name: MedallionManager_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &842267291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842267290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5530fd327c0aa7542a46e31342c80adb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tokenList: []
+--- !u!4 &842267292
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842267290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.935173, y: 9.160463, z: -3.7618208}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &845144460
 GameObject:
   m_ObjectHideFlags: 0
@@ -14789,7 +14829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482986, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.599
+      value: -0.603
       objectReference: {fileID: 0}
     - target: {fileID: 482986, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14817,19 +14857,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13591866, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_Radius
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 13591866, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_Center.x
-      value: 0.12
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 13591866, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_Center.z
-      value: -0.46
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 13591866, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13591866, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
+      propertyPath: m_Center.y
+      value: 0.13
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2324418, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
@@ -30237,7 +30281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38094ef1be0e15547921fd9c2259b696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 5
   turningSpeed: 60
   jumpForce: 8
 --- !u!4 &1892630848
@@ -30283,7 +30327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7bbdaa5f5190143a6fe5df5d390b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recordDeltaTime: 0.1
+  recordDeltaTime: 0
 --- !u!1 &1892747631
 GameObject:
   m_ObjectHideFlags: 0
@@ -31119,7 +31163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 482986, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.56
+      value: 5.579
       objectReference: {fileID: 0}
     - target: {fileID: 482986, guid: 7d08a32fc5253b74fabeeb573dbb2939, type: 2}
       propertyPath: m_LocalPosition.z

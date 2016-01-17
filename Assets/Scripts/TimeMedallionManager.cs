@@ -6,12 +6,10 @@ public class TimeMedallionManager : MonoBehaviour {
     private int i = 0;
     private int j ;
     public List<Vector3> tokenList;
-    private GameObject[] medallions;
     private List<Vector3> medallionLocation = new List<Vector3>();
     private bool isInit = false;
-    public Vector3 zero;
-    private List<Vector3> indexList = new List<Vector3>();
     private string findobject;
+    private GameObject medallion;
 
     private static TimeMedallionManager instance_;
     public static TimeMedallionManager Instance
@@ -25,10 +23,11 @@ public class TimeMedallionManager : MonoBehaviour {
                 {
                     var go = new GameObject("GameManager (Instantiated)");
                     instance_ = go.AddComponent<TimeMedallionManager>();
-                    if (!instance_.isInit)
-                    {
-                        instance_.Init();
-                    }
+
+                }
+                if (!instance_.isInit)
+                {
+                    instance_.Init();
                 }
             }
 
@@ -36,61 +35,66 @@ public class TimeMedallionManager : MonoBehaviour {
         }
     }
 
-    public void Init()
+    private void Init()
     {
-        
+        Debug.Log("Initilaizing mgr");
         for (i = 0; i < 7; i++)
         {
                 findobject = "TimeMedallion" + i.ToString();
                 if (GameObject.Find(findobject)!=null)
-            {
-                medallionLocation.Add(GameObject.Find(findobject).transform.localPosition);
-                //Debug.Log(medallionLocation[i]);
-            }
+                    {
+                     medallionLocation.Add(GameObject.Find(findobject).transform.localPosition);
+                    }
         }
         isInit = true;
     }
 
 
+
     // Use this for initialization
     void Start () {
-        indexList = PersistentManager.Instance.GetLevelPersistentData().indices;
-        instance_.DisableCollider(indexList);
-    }
-    public TimeMedallionManager ()
-    {
-        i = 0;
-        zero = new Vector3(0, 0, 0);
-        tokenList = new List<Vector3>();
+        if (!isInit)
+        {
+            Init();
+        }
+        tokenList = PersistentManager.Instance.GetLevelPersistentData().indices;
+        //DisableCollider(tokenList);
+        j = tokenList.Count - 1;
+        if (tokenList[j] == new Vector3(0f, 0f, 0f))
+        {
+            tokenList = new List<Vector3>();
+        }
+        Debug.Log("Picked up piece" + tokenList[j]);
+        for (i = 0; i < medallionLocation.Count; i++)
+        {
+            if (medallionLocation[i] == tokenList[j])
+            {
+                findobject = "TimeMedallion" + i.ToString();
+                medallion = GameObject.Find(findobject);
+                Debug.Log("object :" + medallion);
+                medallion.GetComponent<Collider>().enabled = false;
+            }
+        }
     }
 	public void DisableCollider (List<Vector3> index)
     {
-        Debug.Log("Count"+index.Count);
-        j = index.Count;
-        Debug.Log("j :" + j);
-        tokenList = index;
+
+        j = index.Count - 1;
         for (i = 0; i < medallionLocation.Count; i++)
         {
-            if (medallionLocation[i] == index[j-1])
+            if (medallionLocation[i] == index[j])
             {
-                //Debug.Log(index[i]);
                 findobject = "TimeMedallion" + i.ToString();
-                var obj = GameObject.Find(findobject);
-                Debug.Log(findobject);
-                Debug.Log("Testing Same in Function :"+ medallionLocation[i]);
-                //medallions[i].GetComponent<Collider>().enabled = false;
-                obj.GetComponent<Collider>().enabled = false;
-                Debug.Log(obj.GetComponent<Collider>().enabled);
-                Destroy(GameObject.Find(findobject));
-                Debug.Log(GameObject.Find(findobject));
+                medallion = GameObject.Find(findobject);
+                Debug.Log("object :" + medallion);
+                medallion.GetComponent<Collider>().enabled = false;
             }
         }
-        j += 1;
     }
 	// Update is called once per frame
 	void Update () {
         
-        //if ( tokenList[6] != new Vector3(0,0,0))
+        //if ( PersistentManager.Instance.GetLevelPersistentData().indices[6] != new Vector3(0,0,0)), Use for win state
         //{
 
         //}
