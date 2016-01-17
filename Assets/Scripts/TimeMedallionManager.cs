@@ -59,17 +59,16 @@ public class TimeMedallionManager : MonoBehaviour {
         tokenList = PersistentManager.Instance.GetLevelPersistentData().indices;
         //DisableCollider(tokenList);
         j = tokenList.Count - 1;
-        if (tokenList[j] == new Vector3(0f, 0f, 0f))
+        if (tokenList.Count != 0)
         {
-            tokenList = new List<Vector3>();
-        }
-        for (i = 0; i < medallionLocation.Count; i++)
-        {
-            if (medallionLocation[i] == tokenList[j])
+            for (i = 0; i < medallionLocation.Count; i++)
             {
-                findobject = "TimeMedallion" + i.ToString();
-                medallion = GameObject.Find(findobject);
-                medallion.GetComponent<Collider>().enabled = false;
+                if (medallionLocation[i] == tokenList[j])
+                {
+                    findobject = "TimeMedallion" + i.ToString();
+                    medallion = GameObject.Find(findobject);
+                    medallion.GetComponent<Collider>().enabled = false;
+                }
             }
         }
     }
