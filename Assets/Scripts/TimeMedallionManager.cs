@@ -21,7 +21,7 @@ public class TimeMedallionManager : MonoBehaviour {
                 instance_ = FindObjectOfType<TimeMedallionManager>();
                 if (instance_ == null)
                 {
-                    var go = new GameObject("GameManager (Instantiated)");
+                    var go = new GameObject("TimeMedallionManager (Instantiated)");
                     instance_ = go.AddComponent<TimeMedallionManager>();
 
                 }
