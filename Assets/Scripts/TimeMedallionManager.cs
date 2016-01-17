@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class TimeMedallionManager : MonoBehaviour {
@@ -78,9 +79,9 @@ public class TimeMedallionManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        //if ( medallionLocation.Count == PersistentManager.Instance.GetLevelPersistentData().indices.Count ), Use for win state
-        //{
-
-        //}
+        if ( medallionLocation.Count == PersistentManager.Instance.GetLevelPersistentData().indices.Count )// Use for win state
+        {
+            SceneManager.LoadScene("WinScreen");
+        }
 	}
 }
