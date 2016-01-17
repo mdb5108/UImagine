@@ -75,7 +75,7 @@ public class TimeMedallionManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        //if ( PersistentManager.Instance.GetLevelPersistentData().indices[6] != new Vector3(0,0,0)), Use for win state
+        //if ( medallionLocation.Count == PersistentManager.Instance.GetLevelPersistentData().indices.Count ), Use for win state
         //{
 
         //}
