@@ -29999,7 +29999,7 @@ GameObject:
   - 143: {fileID: 1892630849}
   - 114: {fileID: 1892630850}
   - 65: {fileID: 1892630845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -32016,7 +32016,7 @@ GameObject:
   - 33: {fileID: 2039177250}
   - 23: {fileID: 2039177249}
   - 54: {fileID: 2039177251}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
