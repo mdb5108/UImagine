@@ -63,11 +63,14 @@ public class TimeMedallionManager : MonoBehaviour {
         {
             for (i = 0; i < medallionLocation.Count; i++)
             {
-                if (medallionLocation[i] == tokenList[j])
+                for (j = 0; j < tokenList.Count; j++)
                 {
-                    findobject = "TimeMedallion" + i.ToString();
-                    medallion = GameObject.Find(findobject);
-                    medallion.GetComponent<Collider>().enabled = false;
+                    if (medallionLocation[i] == tokenList[j])
+                    {
+                        findobject = "TimeMedallion" + i.ToString();
+                        medallion = GameObject.Find(findobject);
+                        medallion.GetComponent<Collider>().enabled = false;
+                    }
                 }
             }
         }
