@@ -20,7 +20,7 @@ public class Player : PlayerBase {
 
     private bool disconnectInput;
     private IEnumerator disconnectedInput;
-
+    public static readonly float PARTICLE_STOP_STOP = 2;
     private static Player instance_;
     public static Player Instance
     {

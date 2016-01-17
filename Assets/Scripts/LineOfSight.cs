@@ -7,14 +7,24 @@ public class LineOfSight : MonoBehaviour
     public float fieldOfViewAngle;           // Number of degrees, centred on forward, for the enemy see.
     public bool playerInSight;               // Whether or not the player is currently sighted.
     private SphereCollider col;              // Reference to the sphere collider trigger component.
-    //private GameObject player;               // Reference to the player.
     private LineRenderer lineRenderer;
     public Material Found;
     public Material Death;
+    public GetStoned getstoned;
+    public GlowWarning glowwarning;
+    private bool Stoned= false;
+    public float duration = 5.0F;
+
+    private static readonly float SAFE_ZONE = 15;
+    private static readonly float DANGER_ZONE = 10;
+    private static readonly float DEATH_ZONE = 4;
+
     void Awake()
     {
         // Setting up the references.
         col = GetComponent<SphereCollider>();
+        getstoned   = Player.Instance.GetComponent<GetStoned>();
+        glowwarning = Player.Instance.GetComponent<GlowWarning>();
     }
 
     void OnTriggerStay(Collider other)
@@ -33,8 +43,31 @@ public class LineOfSight : MonoBehaviour
                     if (hit.collider.gameObject.tag == "Player")
                     {
                         var distance = Vector3.Distance(Player.Instance.transform.position, transform.position);
-                        //Debug.Log(distance);
-                        if (distance <= 15)
+                        if (distance <= DEATH_ZONE)
+                        {
+                            if (Stoned == false)
+                            {
+                                glowwarning.GlowWarningEffect(0);
+                                Player.Instance.DisconnectInput(Player.PARTICLE_STOP_STOP);
+                                getstoned.StoneEffect();
+                                Stoned = true;
+                            }
+                        }
+                        else if (distance <= DANGER_ZONE)
+                        {
+
+                            lineRenderer.enabled = true;
+                            float dangerLength = DANGER_ZONE-DEATH_ZONE;
+                            float lerp = 1 - (distance - DEATH_ZONE)/dangerLength;
+                            lineRenderer.material.Lerp(Found, Death, lerp);
+                            lineRenderer.SetPosition(0, Player.Instance.transform.position);
+                            lineRenderer.SetPosition(1, transform.position);
+                            lineRenderer.SetWidth(.45f, .45f);
+                            playerInSight = true;
+                            glowwarning.GlowWarningEffect(2);
+
+                        }
+                        else if (distance <= SAFE_ZONE)
                         {
                             lineRenderer = GetComponent<LineRenderer>();
                             lineRenderer.enabled = true;
@@ -43,19 +76,9 @@ public class LineOfSight : MonoBehaviour
                             lineRenderer.SetPosition(1, transform.position);
                             lineRenderer.SetWidth(.45f, .45f);
                             playerInSight = true;
+                            glowwarning.GlowWarningEffect(1);
                         }
 
-                        if (distance <= 7)
-                        {
-                            
-                            lineRenderer.enabled = true;
-                            lineRenderer.material = Death;
-                            lineRenderer.SetPosition(0, Player.Instance.transform.position);
-                            lineRenderer.SetPosition(1, transform.position);
-                            lineRenderer.SetWidth(.45f, .45f);
-                            playerInSight = true;
-                            //GameManager.Instance.LoseLifeRedo();
-                        }
 
                     }
                 }
@@ -63,6 +86,7 @@ public class LineOfSight : MonoBehaviour
             else
             {
                 disablerenderer();
+                glowwarning.GlowWarningEffect(0);
             }
         }
     }
@@ -79,5 +103,6 @@ public class LineOfSight : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.enabled = false;
+        glowwarning.GlowWarningEffect(0);
     }
 }
