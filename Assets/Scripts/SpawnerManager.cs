@@ -42,7 +42,7 @@ public class SpawnerManager : MonoBehaviour
         int count = RecordManager.Instance.RecordCount();
         for(int i = 0; i < count; i++)
         {
-            GameObject go = (GameObject)Instantiate(clonePrefab, transform.position, transform.rotation);
+            GameObject go = (GameObject)Instantiate(clonePrefab, ids[i], transform.rotation);
             go.GetComponent<Clone>().cloneIndex = i;
             go.transform.SetParent(transform);
         }

@@ -208,6 +208,8 @@ MonoBehaviour:
   playerInSight: 0
   Found: {fileID: 2100000, guid: 9ffef151a35746a4daf7de803197e567, type: 2}
   Death: {fileID: 2100000, guid: 6579bc7fef0a6924c84aaf0f448fbe58, type: 2}
+  getstoned: {fileID: 0}
+  duration: 2
 --- !u!114 &11498758
 MonoBehaviour:
   m_ObjectHideFlags: 1
