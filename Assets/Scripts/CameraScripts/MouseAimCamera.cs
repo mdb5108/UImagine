@@ -6,7 +6,7 @@ public class MouseAimCamera : MonoBehaviour {
 	public float rotateSpeed = 5;
 	Vector3 offset;
 	
-	void Start() {
+	void Awake() {
 		offset = target.transform.position - transform.position;
 	}
 	
