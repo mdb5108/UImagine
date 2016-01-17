@@ -9,7 +9,7 @@ public class MouseAimCamera : MonoBehaviour {
     float length;
     int layerMask;
 	
-	void Start() {
+	void Awake() {
 		offset = target.transform.position - transform.position;
         length = offset.magnitude;
         startLength = length;
