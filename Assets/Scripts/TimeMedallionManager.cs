@@ -37,7 +37,6 @@ public class TimeMedallionManager : MonoBehaviour {
 
     private void Init()
     {
-        Debug.Log("Initilaizing mgr");
         for (i = 0; i < 7; i++)
         {
                 findobject = "TimeMedallion" + i.ToString();
@@ -64,14 +63,12 @@ public class TimeMedallionManager : MonoBehaviour {
         {
             tokenList = new List<Vector3>();
         }
-        Debug.Log("Picked up piece" + tokenList[j]);
         for (i = 0; i < medallionLocation.Count; i++)
         {
             if (medallionLocation[i] == tokenList[j])
             {
                 findobject = "TimeMedallion" + i.ToString();
                 medallion = GameObject.Find(findobject);
-                Debug.Log("object :" + medallion);
                 medallion.GetComponent<Collider>().enabled = false;
             }
         }
@@ -86,7 +83,6 @@ public class TimeMedallionManager : MonoBehaviour {
             {
                 findobject = "TimeMedallion" + i.ToString();
                 medallion = GameObject.Find(findobject);
-                Debug.Log("object :" + medallion);
                 medallion.GetComponent<Collider>().enabled = false;
             }
         }
