@@ -9,7 +9,7 @@ public class Clone : PlayerBase
 {
     public int cloneIndex;
     public CloneCamera cloneCamera;
-
+    private LineOfSight LineOfSight;
     private List<RecordData>        recording;
     private IEnumerator<RecordData> curRecording;
     private RecordData previousRecord;
@@ -24,6 +24,7 @@ public class Clone : PlayerBase
         curRecording = recording.GetEnumerator();
         previousRecord = curRecording.Current;
         currentRecord = curRecording.Current;
+        LineOfSight = GetComponent<LineOfSight>();
     }
 
     protected override void Update()
@@ -84,6 +85,7 @@ public class Clone : PlayerBase
                       {
                           cloneCamera.GoBlack();
                           this.gameObject.SetActive(false);
+                            LineOfSight.disablerenderer();
                       }
                       break;
                     default:

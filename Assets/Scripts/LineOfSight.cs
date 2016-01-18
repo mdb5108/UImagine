@@ -10,8 +10,8 @@ public class LineOfSight : MonoBehaviour
     private LineRenderer lineRenderer;
     public Material Found;
     public Material Death;
-    public GetStoned getstoned;
-    public GlowWarning glowwarning;
+    private GetStoned getstoned;
+    private GlowWarning glowwarning;
     private bool Stoned= false;
     public float duration = 5.0F;
 
@@ -99,7 +99,7 @@ public class LineOfSight : MonoBehaviour
             disablerenderer();
         }
     }
-    void disablerenderer()
+    public void disablerenderer()
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.enabled = false;
