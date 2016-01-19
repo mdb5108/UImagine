@@ -20,7 +20,7 @@ public class Player : PlayerBase {
     private Record recording;
 
     public Animator animations;
-    public static readonly float RUNNING_TIME_MODIFIER = 6f;
+    public static readonly float RUNNING_TIME_MODIFIER = 3f;
 
     private bool disconnectInput;
     private IEnumerator disconnectedInput;
