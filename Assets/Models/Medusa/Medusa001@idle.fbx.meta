@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 3b31311d2bf56ab49a152f9cf19f2758
+timeCreated: 1453166245
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Medusa_Body_v1:Head
+    100004: Medusa_Body_v1:HeadTop_End
+    100006: Medusa_Body_v1:Hips
+    100008: Medusa_Body_v1:LeftArm
+    100010: Medusa_Body_v1:LeftFoot
+    100012: Medusa_Body_v1:LeftForeArm
+    100014: Medusa_Body_v1:LeftHand
+    100016: Medusa_Body_v1:LeftHandIndex1
+    100018: Medusa_Body_v1:LeftHandIndex2
+    100020: Medusa_Body_v1:LeftHandIndex3
+    100022: Medusa_Body_v1:LeftHandIndex4
+    100024: Medusa_Body_v1:LeftHandMiddle1
+    100026: Medusa_Body_v1:LeftHandMiddle2
+    100028: Medusa_Body_v1:LeftHandMiddle3
+    100030: Medusa_Body_v1:LeftHandMiddle4
+    100032: Medusa_Body_v1:LeftHandPinky1
+    100034: Medusa_Body_v1:LeftHandPinky2
+    100036: Medusa_Body_v1:LeftHandPinky3
+    100038: Medusa_Body_v1:LeftHandPinky4
+    100040: Medusa_Body_v1:LeftHandRing1
+    100042: Medusa_Body_v1:LeftHandRing2
+    100044: Medusa_Body_v1:LeftHandRing3
+    100046: Medusa_Body_v1:LeftHandRing4
+    100048: Medusa_Body_v1:LeftHandThumb1
+    100050: Medusa_Body_v1:LeftHandThumb2
+    100052: Medusa_Body_v1:LeftHandThumb3
+    100054: Medusa_Body_v1:LeftHandThumb4
+    100056: Medusa_Body_v1:LeftLeg
+    100058: Medusa_Body_v1:LeftShoulder
+    100060: Medusa_Body_v1:LeftToe_End
+    100062: Medusa_Body_v1:LeftToeBase
+    100064: Medusa_Body_v1:LeftUpLeg
+    100066: Medusa_Body_v1:Neck
+    100068: Medusa_Body_v1:RightArm
+    100070: Medusa_Body_v1:RightFoot
+    100072: Medusa_Body_v1:RightForeArm
+    100074: Medusa_Body_v1:RightHand
+    100076: Medusa_Body_v1:RightHandIndex1
+    100078: Medusa_Body_v1:RightHandIndex2
+    100080: Medusa_Body_v1:RightHandIndex3
+    100082: Medusa_Body_v1:RightHandIndex4
+    100084: Medusa_Body_v1:RightHandMiddle1
+    100086: Medusa_Body_v1:RightHandMiddle2
+    100088: Medusa_Body_v1:RightHandMiddle3
+    100090: Medusa_Body_v1:RightHandMiddle4
+    100092: Medusa_Body_v1:RightHandPinky1
+    100094: Medusa_Body_v1:RightHandPinky2
+    100096: Medusa_Body_v1:RightHandPinky3
+    100098: Medusa_Body_v1:RightHandPinky4
+    100100: Medusa_Body_v1:RightHandRing1
+    100102: Medusa_Body_v1:RightHandRing2
+    100104: Medusa_Body_v1:RightHandRing3
+    100106: Medusa_Body_v1:RightHandRing4
+    100108: Medusa_Body_v1:RightHandThumb1
+    100110: Medusa_Body_v1:RightHandThumb2
+    100112: Medusa_Body_v1:RightHandThumb3
+    100114: Medusa_Body_v1:RightHandThumb4
+    100116: Medusa_Body_v1:RightLeg
+    100118: Medusa_Body_v1:RightShoulder
+    100120: Medusa_Body_v1:RightToe_End
+    100122: Medusa_Body_v1:RightToeBase
+    100124: Medusa_Body_v1:RightUpLeg
+    100126: Medusa_Body_v1:Spine
+    100128: Medusa_Body_v1:Spine1
+    100130: Medusa_Body_v1:Spine2
+    400000: //RootNode
+    400002: Medusa_Body_v1:Head
+    400004: Medusa_Body_v1:HeadTop_End
+    400006: Medusa_Body_v1:Hips
+    400008: Medusa_Body_v1:LeftArm
+    400010: Medusa_Body_v1:LeftFoot
+    400012: Medusa_Body_v1:LeftForeArm
+    400014: Medusa_Body_v1:LeftHand
+    400016: Medusa_Body_v1:LeftHandIndex1
+    400018: Medusa_Body_v1:LeftHandIndex2
+    400020: Medusa_Body_v1:LeftHandIndex3
+    400022: Medusa_Body_v1:LeftHandIndex4
+    400024: Medusa_Body_v1:LeftHandMiddle1
+    400026: Medusa_Body_v1:LeftHandMiddle2
+    400028: Medusa_Body_v1:LeftHandMiddle3
+    400030: Medusa_Body_v1:LeftHandMiddle4
+    400032: Medusa_Body_v1:LeftHandPinky1
+    400034: Medusa_Body_v1:LeftHandPinky2
+    400036: Medusa_Body_v1:LeftHandPinky3
+    400038: Medusa_Body_v1:LeftHandPinky4
+    400040: Medusa_Body_v1:LeftHandRing1
+    400042: Medusa_Body_v1:LeftHandRing2
+    400044: Medusa_Body_v1:LeftHandRing3
+    400046: Medusa_Body_v1:LeftHandRing4
+    400048: Medusa_Body_v1:LeftHandThumb1
+    400050: Medusa_Body_v1:LeftHandThumb2
+    400052: Medusa_Body_v1:LeftHandThumb3
+    400054: Medusa_Body_v1:LeftHandThumb4
+    400056: Medusa_Body_v1:LeftLeg
+    400058: Medusa_Body_v1:LeftShoulder
+    400060: Medusa_Body_v1:LeftToe_End
+    400062: Medusa_Body_v1:LeftToeBase
+    400064: Medusa_Body_v1:LeftUpLeg
+    400066: Medusa_Body_v1:Neck
+    400068: Medusa_Body_v1:RightArm
+    400070: Medusa_Body_v1:RightFoot
+    400072: Medusa_Body_v1:RightForeArm
+    400074: Medusa_Body_v1:RightHand
+    400076: Medusa_Body_v1:RightHandIndex1
+    400078: Medusa_Body_v1:RightHandIndex2
+    400080: Medusa_Body_v1:RightHandIndex3
+    400082: Medusa_Body_v1:RightHandIndex4
+    400084: Medusa_Body_v1:RightHandMiddle1
+    400086: Medusa_Body_v1:RightHandMiddle2
+    400088: Medusa_Body_v1:RightHandMiddle3
+    400090: Medusa_Body_v1:RightHandMiddle4
+    400092: Medusa_Body_v1:RightHandPinky1
+    400094: Medusa_Body_v1:RightHandPinky2
+    400096: Medusa_Body_v1:RightHandPinky3
+    400098: Medusa_Body_v1:RightHandPinky4
+    400100: Medusa_Body_v1:RightHandRing1
+    400102: Medusa_Body_v1:RightHandRing2
+    400104: Medusa_Body_v1:RightHandRing3
+    400106: Medusa_Body_v1:RightHandRing4
+    400108: Medusa_Body_v1:RightHandThumb1
+    400110: Medusa_Body_v1:RightHandThumb2
+    400112: Medusa_Body_v1:RightHandThumb3
+    400114: Medusa_Body_v1:RightHandThumb4
+    400116: Medusa_Body_v1:RightLeg
+    400118: Medusa_Body_v1:RightShoulder
+    400120: Medusa_Body_v1:RightToe_End
+    400122: Medusa_Body_v1:RightToeBase
+    400124: Medusa_Body_v1:RightUpLeg
+    400126: Medusa_Body_v1:Spine
+    400128: Medusa_Body_v1:Spine1
+    400130: Medusa_Body_v1:Spine2
+    7400000: idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Medusa_Body_v1:Hips
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:LeftUpLeg
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:LeftUpLeg/Medusa_Body_v1:LeftLeg
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:LeftUpLeg/Medusa_Body_v1:LeftLeg/Medusa_Body_v1:LeftFoot
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:LeftUpLeg/Medusa_Body_v1:LeftLeg/Medusa_Body_v1:LeftFoot/Medusa_Body_v1:LeftToeBase
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:LeftUpLeg/Medusa_Body_v1:LeftLeg/Medusa_Body_v1:LeftFoot/Medusa_Body_v1:LeftToeBase/Medusa_Body_v1:LeftToe_End
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:RightUpLeg
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:RightUpLeg/Medusa_Body_v1:RightLeg
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:RightUpLeg/Medusa_Body_v1:RightLeg/Medusa_Body_v1:RightFoot
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:RightUpLeg/Medusa_Body_v1:RightLeg/Medusa_Body_v1:RightFoot/Medusa_Body_v1:RightToeBase
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:RightUpLeg/Medusa_Body_v1:RightLeg/Medusa_Body_v1:RightFoot/Medusa_Body_v1:RightToeBase/Medusa_Body_v1:RightToe_End
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandIndex1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandIndex1/Medusa_Body_v1:LeftHandIndex2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandIndex1/Medusa_Body_v1:LeftHandIndex2/Medusa_Body_v1:LeftHandIndex3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandIndex1/Medusa_Body_v1:LeftHandIndex2/Medusa_Body_v1:LeftHandIndex3/Medusa_Body_v1:LeftHandIndex4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandMiddle1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandMiddle1/Medusa_Body_v1:LeftHandMiddle2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandMiddle1/Medusa_Body_v1:LeftHandMiddle2/Medusa_Body_v1:LeftHandMiddle3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandMiddle1/Medusa_Body_v1:LeftHandMiddle2/Medusa_Body_v1:LeftHandMiddle3/Medusa_Body_v1:LeftHandMiddle4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandPinky1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandPinky1/Medusa_Body_v1:LeftHandPinky2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandPinky1/Medusa_Body_v1:LeftHandPinky2/Medusa_Body_v1:LeftHandPinky3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandPinky1/Medusa_Body_v1:LeftHandPinky2/Medusa_Body_v1:LeftHandPinky3/Medusa_Body_v1:LeftHandPinky4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandRing1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandRing1/Medusa_Body_v1:LeftHandRing2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandRing1/Medusa_Body_v1:LeftHandRing2/Medusa_Body_v1:LeftHandRing3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandRing1/Medusa_Body_v1:LeftHandRing2/Medusa_Body_v1:LeftHandRing3/Medusa_Body_v1:LeftHandRing4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandThumb1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandThumb1/Medusa_Body_v1:LeftHandThumb2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandThumb1/Medusa_Body_v1:LeftHandThumb2/Medusa_Body_v1:LeftHandThumb3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:LeftShoulder/Medusa_Body_v1:LeftArm/Medusa_Body_v1:LeftForeArm/Medusa_Body_v1:LeftHand/Medusa_Body_v1:LeftHandThumb1/Medusa_Body_v1:LeftHandThumb2/Medusa_Body_v1:LeftHandThumb3/Medusa_Body_v1:LeftHandThumb4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:Neck
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:Neck/Medusa_Body_v1:Head
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:Neck/Medusa_Body_v1:Head/Medusa_Body_v1:HeadTop_End
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandIndex1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandIndex1/Medusa_Body_v1:RightHandIndex2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandIndex1/Medusa_Body_v1:RightHandIndex2/Medusa_Body_v1:RightHandIndex3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandIndex1/Medusa_Body_v1:RightHandIndex2/Medusa_Body_v1:RightHandIndex3/Medusa_Body_v1:RightHandIndex4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandMiddle1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandMiddle1/Medusa_Body_v1:RightHandMiddle2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandMiddle1/Medusa_Body_v1:RightHandMiddle2/Medusa_Body_v1:RightHandMiddle3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandMiddle1/Medusa_Body_v1:RightHandMiddle2/Medusa_Body_v1:RightHandMiddle3/Medusa_Body_v1:RightHandMiddle4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandPinky1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandPinky1/Medusa_Body_v1:RightHandPinky2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandPinky1/Medusa_Body_v1:RightHandPinky2/Medusa_Body_v1:RightHandPinky3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandPinky1/Medusa_Body_v1:RightHandPinky2/Medusa_Body_v1:RightHandPinky3/Medusa_Body_v1:RightHandPinky4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandRing1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandRing1/Medusa_Body_v1:RightHandRing2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandRing1/Medusa_Body_v1:RightHandRing2/Medusa_Body_v1:RightHandRing3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandRing1/Medusa_Body_v1:RightHandRing2/Medusa_Body_v1:RightHandRing3/Medusa_Body_v1:RightHandRing4
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandThumb1
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandThumb1/Medusa_Body_v1:RightHandThumb2
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandThumb1/Medusa_Body_v1:RightHandThumb2/Medusa_Body_v1:RightHandThumb3
+        weight: 1
+      - path: Medusa_Body_v1:Hips/Medusa_Body_v1:Spine/Medusa_Body_v1:Spine1/Medusa_Body_v1:Spine2/Medusa_Body_v1:RightShoulder/Medusa_Body_v1:RightArm/Medusa_Body_v1:RightForeArm/Medusa_Body_v1:RightHand/Medusa_Body_v1:RightHandThumb1/Medusa_Body_v1:RightHandThumb2/Medusa_Body_v1:RightHandThumb3/Medusa_Body_v1:RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,6 +18,9 @@ public class Player : PlayerBase {
     private CharacterController cc;
     private Record recording;
 
+    public Animator animations;
+    public static readonly float RUNNING_TIME_MODIFIER = 6f;
+
     private bool disconnectInput;
     private IEnumerator disconnectedInput;
     public static readonly float PARTICLE_STOP_STOP = 2;
@@ -66,6 +69,7 @@ public class Player : PlayerBase {
         {
             gravity += jumpForce;
             recording.RegisterAction("jump");
+            animations.SetTrigger("Jump");
         }
         float horizontal = 0;
         Vector3 vertical = Vector3.zero;
@@ -76,6 +80,13 @@ public class Player : PlayerBase {
           transform.Rotate(0, horizontal, 0);
           vertical = Input.GetAxis("Vertical") * transform.forward * movementSpeed * Time.deltaTime;
         }
+
+        float animationSpeed = RUNNING_TIME_MODIFIER * Vector3.Dot(transform.forward, vertical);
+        animations.SetBool("Moving", vertical != Vector3.zero);
+        animations.SetFloat("Direction", animationSpeed);
+        animations.SetBool("InAir", !cc.isGrounded);
+        recording.RegisterAction(cc.isGrounded ? "Grounded" : "InAir");
+        recording.RegisterAction(vertical != Vector3.zero ? "Moving" : "NotMoving");
 
         Move((x) => cc.Move(x), vertical + gravity*Vector3.up*Time.deltaTime);
     }

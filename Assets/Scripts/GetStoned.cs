@@ -20,7 +20,12 @@ public class GetStoned : MonoBehaviour {
     public void StoneEffect(){
         stoneSteam.Play();
         Renderer render1 = CharObj.GetComponent<Renderer>();
-        render1.material = stoneMaterial;
+        Material[] newMaterials = new Material[render1.materials.Length];
+        for(int i = 0; i < render1.materials.Length; i++)
+        {
+            newMaterials[i] = stoneMaterial;
+        }
+        render1.materials = newMaterials;
         stoneLight.Play();
 
         StartCoroutine(Example());
