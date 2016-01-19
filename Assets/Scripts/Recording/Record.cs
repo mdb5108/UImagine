@@ -62,7 +62,8 @@ public class Record : MonoBehaviour
             {
                 var size = lastRecord.actions.Length+1;
                 var tmp = new string[size];
-                Array.Copy(tmp, lastRecord.actions, size);
+                Array.Copy(lastRecord.actions, tmp, size-1);
+                tmp[size-1] = action;
                 lastRecord.actions = tmp;
             }
             else
