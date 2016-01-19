@@ -17,6 +17,8 @@ public class Clone : PlayerBase
 
     private float startTime;
 
+    public Animator animations;
+
     protected override void Start()
     {
         base.Start();
@@ -74,6 +76,10 @@ public class Clone : PlayerBase
         }
         transform.rotation = newRotation;
 
+        Vector3 velocity = (currentRecord.location-previousRecord.location);
+        float animationSpeed = Player.RUNNING_TIME_MODIFIER * Vector3.Dot(transform.forward, velocity);
+        animations.SetFloat("Direction", animationSpeed);
+
         if(currentRecord.actions != null)
         {
             for(int i = 0; i < currentRecord.actions.Length; i++)
@@ -87,6 +93,21 @@ public class Clone : PlayerBase
                           this.gameObject.SetActive(false);
                             LineOfSight.disablerenderer();
                       }
+                      break;
+                    case "InAir":
+                      animations.SetBool("InAir", true);
+                      break;
+                    case "Grounded":
+                      animations.SetBool("InAir", false);
+                      break;
+                    case "Moving":
+                      animations.SetBool("Moving", true);
+                      break;
+                    case "NotMoving":
+                      animations.SetBool("Moving", false);
+                      break;
+                    case "jump":
+                      animations.SetTrigger("Jump");
                       break;
                     default:
                       //Do Nothing
