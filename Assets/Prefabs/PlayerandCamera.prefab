@@ -2560,6 +2560,7 @@ MonoBehaviour:
   movementSpeed: 10
   turningSpeed: 60
   jumpForce: 8
+  cameraScript: {fileID: 11441608}
   animations: {fileID: 9543284}
 --- !u!114 &11441608
 MonoBehaviour:

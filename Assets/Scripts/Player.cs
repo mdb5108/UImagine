@@ -15,6 +15,7 @@ public class Player : PlayerBase {
 
     private float gravity;
 
+    public MouseAimCamera cameraScript;
     private CharacterController cc;
     private Record recording;
 
@@ -116,8 +117,10 @@ public class Player : PlayerBase {
     private IEnumerator DisconnectInput_Coroutine(float time)
     {
         disconnectInput = true;
+        cameraScript.enabled = false;
         yield return new WaitForSeconds(time);
         disconnectInput = false;
+        cameraScript.enabled = true;
     }
 
     public void DisconnectInput(float time)
@@ -135,5 +138,6 @@ public class Player : PlayerBase {
             disconnectedInput = null;
         }
         disconnectInput = false;
+        cameraScript.enabled = true;
     }
 }
