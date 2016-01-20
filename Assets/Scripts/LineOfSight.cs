@@ -16,8 +16,8 @@ public class LineOfSight : MonoBehaviour
     public float duration = 5.0F;
 
     private static readonly float SAFE_ZONE = 15;
-    private static readonly float DANGER_ZONE = 10;
-    private static readonly float DEATH_ZONE = 4;
+    private static readonly float DANGER_ZONE = 12;
+    private static readonly float DEATH_ZONE = 11;
 
     void Awake()
     {

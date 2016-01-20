@@ -2276,7 +2276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f797a6609ba52fc478d2b4439d63372b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldOfViewAngle: 45
+  fieldOfViewAngle: 60
   playerInSight: 0
   Found: {fileID: 2100000, guid: 9ffef151a35746a4daf7de803197e567, type: 2}
   Death: {fileID: 2100000, guid: 6579bc7fef0a6924c84aaf0f448fbe58, type: 2}
@@ -2534,6 +2534,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: 0.9924482
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fieldOfViewAngle
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
