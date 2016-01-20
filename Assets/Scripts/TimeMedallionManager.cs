@@ -58,7 +58,7 @@ public class TimeMedallionManager : MonoBehaviour {
             Init();
         }
         tokenList = PersistentManager.Instance.GetLevelPersistentData().indices;
-        //DisableCollider(tokenList);
+        List<float> disappearTimeList = PersistentManager.Instance.GetLevelPersistentData().medallionTimeTaken;
         j = tokenList.Count - 1;
         if (tokenList.Count != 0)
         {
@@ -71,6 +71,7 @@ public class TimeMedallionManager : MonoBehaviour {
                         findobject = "TimeMedallion" + i.ToString();
                         medallion = GameObject.Find(findobject);
                         medallion.GetComponent<Collider>().enabled = false;
+                        medallion.GetComponent<TimeMedallion>().DisappearAt(disappearTimeList[j]);
                     }
                 }
             }

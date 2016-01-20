@@ -29,6 +29,7 @@ public class PersistentManager : MonoBehaviour
             levelData = ScriptableObject.CreateInstance<LevelPersistentData>();
             levelData.records = new List<List<RecordData> >();
             levelData.indices = new List<Vector3>();
+            levelData.medallionTimeTaken = new List<float>();
         }
 
         return levelData;
