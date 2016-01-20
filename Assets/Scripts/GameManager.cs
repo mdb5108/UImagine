@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public readonly float GRAVITY = 9.81f;
+    public readonly float GRAVITY = 15f;
     public void NextIteration()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

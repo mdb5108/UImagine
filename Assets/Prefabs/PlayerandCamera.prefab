@@ -2559,7 +2559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 20
   turningSpeed: 60
-  jumpForce: 9.5
+  jumpForce: 10.5
   cameraScript: {fileID: 11441608}
   animations: {fileID: 9543284}
 --- !u!114 &11441608
@@ -8771,7 +8771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: jumpForce
-      value: 9.5
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
