@@ -9,8 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MichaelTest.unity
   - enabled: 1
     path: Assets/Scenes/MainMenuScreen.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/YueTestLevel.unity
+  - enabled: 1
+    path: Assets/Scenes/Vega2016.unity
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
   - enabled: 1

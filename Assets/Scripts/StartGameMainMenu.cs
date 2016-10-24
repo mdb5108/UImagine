@@ -9,7 +9,7 @@ public class StartGameMainMenu : MonoBehaviour
         if (Input.anyKey && !Input.GetButton("Cancel"))
         {
             PersistentManager.Instance.ResetData();
-            SceneManager.LoadScene("YueTestLevel");
+            SceneManager.LoadScene("Vega2016");
         }
         if (Input.GetButton("Cancel"))
         {
