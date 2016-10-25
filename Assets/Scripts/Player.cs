@@ -62,7 +62,6 @@ public class Player : PlayerBase {
         base.Update();
         if(cc.isGrounded)
             gravity = 0f;
-
         gravity -= GameManager.Instance.GRAVITY * Time.deltaTime;
 
         //Jump
