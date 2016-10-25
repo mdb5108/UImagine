@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MouseAimCamera : MonoBehaviour {
 	public GameObject target;
-	public float rotateSpeed = 5;
+	public float rotateSpeed = 2;
 	Vector3 offset;
     float startLength;
     float length;
@@ -15,6 +15,7 @@ public class MouseAimCamera : MonoBehaviour {
         startLength = length;
         offset.Normalize();
         layerMask = 1 << LayerMask.NameToLayer("Player");
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 
     private void FixedUpdate() {

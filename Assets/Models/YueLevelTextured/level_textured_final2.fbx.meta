@@ -1094,6 +1094,48 @@ ModelImporter:
     102150: transform83
     102152: transform84
     102154: transform85
+    102156: baseStones
+    102158: boundries
+    102160: boundry1
+    102162: boundry2
+    102164: boundry3
+    102166: boundry4
+    102168: boundry5
+    102170: boundry6
+    102172: boundry7
+    102174: boundry8
+    102176: bridges
+    102178: corridor
+    102180: pasted__pasted__pasted__pasted__pasted__polySurface42
+    102182: pasted__pasted__pasted__pasted__polySurface105
+    102184: pasted__pasted__pasted__pasted__polySurface106
+    102186: pasted__pasted__pasted__pasted__polySurface107
+    102188: pasted__pasted__pasted__pasted__polySurface108
+    102190: pasted__pasted__pasted__polySurface44
+    102192: pasted__pasted__pasted__polySurface45
+    102194: pasted__pasted__pasted__polySurface46
+    102196: pasted__pasted__polySurface38
+    102198: pasted__pasted__polySurface39
+    102200: pasted__pasted__polySurface40
+    102202: pasted__pasted__polySurface41
+    102204: pasted__pasted__polySurface42
+    102206: pinkboundry
+    102208: platformHigh
+    102210: room2
+    102212: roomcenter
+    102214: slope
+    102216: stairs1
+    102218: stairs2
+    102220: stonerooms
+    102222: stones
+    102224: tree8
+    102226: trees1
+    102228: trees2
+    102230: trees3
+    102232: trees4
+    102234: trees5
+    102236: trees6
+    102238: trees7
     400000: group
     400002: group11
     400004: group12
@@ -2183,6 +2225,48 @@ ModelImporter:
     402150: transform83
     402152: transform84
     402154: transform85
+    402156: baseStones
+    402158: boundries
+    402160: boundry1
+    402162: boundry2
+    402164: boundry3
+    402166: boundry4
+    402168: boundry5
+    402170: boundry6
+    402172: boundry7
+    402174: boundry8
+    402176: bridges
+    402178: corridor
+    402180: pasted__pasted__pasted__pasted__pasted__polySurface42
+    402182: pasted__pasted__pasted__pasted__polySurface105
+    402184: pasted__pasted__pasted__pasted__polySurface106
+    402186: pasted__pasted__pasted__pasted__polySurface107
+    402188: pasted__pasted__pasted__pasted__polySurface108
+    402190: pasted__pasted__pasted__polySurface44
+    402192: pasted__pasted__pasted__polySurface45
+    402194: pasted__pasted__pasted__polySurface46
+    402196: pasted__pasted__polySurface38
+    402198: pasted__pasted__polySurface39
+    402200: pasted__pasted__polySurface40
+    402202: pasted__pasted__polySurface41
+    402204: pasted__pasted__polySurface42
+    402206: pinkboundry
+    402208: platformHigh
+    402210: room2
+    402212: roomcenter
+    402214: slope
+    402216: stairs1
+    402218: stairs2
+    402220: stonerooms
+    402222: stones
+    402224: tree8
+    402226: trees1
+    402228: trees2
+    402230: trees3
+    402232: trees4
+    402234: trees5
+    402236: trees6
+    402238: trees7
     2300000: group27_pasted__group25_pasted__pasted__group17_pasted__pasted__pasted__group16_pasted__pasted__pasted__pasted__group11_pasted__pasted__pasted__pasted__pasted__pCube4_pasted__pasted__pasted__pasted__pasted__polySurface12
     2300002: pasted__pasted__pasted__pasted__pasted__polySurface12 2
     2300004: pasted__pasted__pasted__pasted__pasted__polySurface12 3
@@ -2426,6 +2510,29 @@ ModelImporter:
     2300480: pSphere2
     2300482: pSphere3
     2300484: pSphere4
+    2300486: boundry1
+    2300488: boundry2
+    2300490: boundry3
+    2300492: boundry4
+    2300494: boundry5
+    2300496: boundry6
+    2300498: boundry7
+    2300500: boundry8
+    2300502: pasted__pasted__pasted__pasted__pasted__polySurface12
+    2300504: pasted__pasted__pasted__pasted__pasted__polySurface41
+    2300506: pasted__pasted__pasted__pasted__pasted__polySurface42
+    2300508: pasted__pasted__pasted__pasted__polySurface105
+    2300510: pasted__pasted__pasted__pasted__polySurface106
+    2300512: pasted__pasted__pasted__pasted__polySurface107
+    2300514: pasted__pasted__pasted__pasted__polySurface108
+    2300516: pasted__pasted__pasted__polySurface44
+    2300518: pasted__pasted__pasted__polySurface45
+    2300520: pasted__pasted__pasted__polySurface46
+    2300522: pasted__pasted__polySurface38
+    2300524: pasted__pasted__polySurface39
+    2300526: pasted__pasted__polySurface40
+    2300528: pasted__pasted__polySurface41
+    2300530: pasted__pasted__polySurface42
     3300000: group27_pasted__group25_pasted__pasted__group17_pasted__pasted__pasted__group16_pasted__pasted__pasted__pasted__group11_pasted__pasted__pasted__pasted__pasted__pCube4_pasted__pasted__pasted__pasted__pasted__polySurface12
     3300002: pasted__pasted__pasted__pasted__pasted__polySurface12 2
     3300004: pasted__pasted__pasted__pasted__pasted__polySurface12 3
@@ -2669,6 +2776,29 @@ ModelImporter:
     3300480: pSphere2
     3300482: pSphere3
     3300484: pSphere4
+    3300486: boundry1
+    3300488: boundry2
+    3300490: boundry3
+    3300492: boundry4
+    3300494: boundry5
+    3300496: boundry6
+    3300498: boundry7
+    3300500: boundry8
+    3300502: pasted__pasted__pasted__pasted__pasted__polySurface12
+    3300504: pasted__pasted__pasted__pasted__pasted__polySurface41
+    3300506: pasted__pasted__pasted__pasted__pasted__polySurface42
+    3300508: pasted__pasted__pasted__pasted__polySurface105
+    3300510: pasted__pasted__pasted__pasted__polySurface106
+    3300512: pasted__pasted__pasted__pasted__polySurface107
+    3300514: pasted__pasted__pasted__pasted__polySurface108
+    3300516: pasted__pasted__pasted__polySurface44
+    3300518: pasted__pasted__pasted__polySurface45
+    3300520: pasted__pasted__pasted__polySurface46
+    3300522: pasted__pasted__polySurface38
+    3300524: pasted__pasted__polySurface39
+    3300526: pasted__pasted__polySurface40
+    3300528: pasted__pasted__polySurface41
+    3300530: pasted__pasted__polySurface42
     4300000: pCube1
     4300002: polySurface121
     4300004: polySurface122
@@ -2912,6 +3042,28 @@ ModelImporter:
     4300480: pillar_pCylinder31
     4300482: pPipe5
     4300484: pPipe6
+    4300486: boundry1
+    4300488: boundry2
+    4300490: boundry3
+    4300492: boundry4
+    4300494: boundry5
+    4300496: boundry6
+    4300498: boundry7
+    4300500: boundry8
+    4300502: pasted__pasted__polySurface42
+    4300504: pasted__pasted__polySurface40
+    4300506: pasted__pasted__polySurface41
+    4300508: pasted__pasted__polySurface39
+    4300510: pasted__pasted__pasted__pasted__pasted__polySurface42
+    4300512: pasted__pasted__pasted__pasted__polySurface108
+    4300514: pasted__pasted__pasted__polySurface46
+    4300516: pasted__pasted__pasted__pasted__polySurface106
+    4300518: pasted__pasted__pasted__pasted__polySurface107
+    4300520: pasted__pasted__pasted__polySurface45
+    4300522: pasted__pasted__pasted__polySurface44
+    4300524: pasted__pasted__pasted__pasted__pasted__polySurface41
+    4300526: pasted__pasted__polySurface38
+    4300528: pasted__pasted__pasted__pasted__polySurface105
     6400000: group27_pasted__group25_pasted__pasted__group17_pasted__pasted__pasted__group16_pasted__pasted__pasted__pasted__group11_pasted__pasted__pasted__pasted__pasted__pCube4_pasted__pasted__pasted__pasted__pasted__polySurface12
     6400002: pasted__pasted__pasted__pasted__pasted__polySurface12 2
     6400004: pasted__pasted__pasted__pasted__pasted__polySurface12 3
@@ -3155,6 +3307,29 @@ ModelImporter:
     6400480: pSphere2
     6400482: pSphere3
     6400484: pSphere4
+    6400486: boundry1
+    6400488: boundry2
+    6400490: boundry3
+    6400492: boundry4
+    6400494: boundry5
+    6400496: boundry6
+    6400498: boundry7
+    6400500: boundry8
+    6400502: pasted__pasted__pasted__pasted__pasted__polySurface12
+    6400504: pasted__pasted__pasted__pasted__pasted__polySurface41
+    6400506: pasted__pasted__pasted__pasted__pasted__polySurface42
+    6400508: pasted__pasted__pasted__pasted__polySurface105
+    6400510: pasted__pasted__pasted__pasted__polySurface106
+    6400512: pasted__pasted__pasted__pasted__polySurface107
+    6400514: pasted__pasted__pasted__pasted__polySurface108
+    6400516: pasted__pasted__pasted__polySurface44
+    6400518: pasted__pasted__pasted__polySurface45
+    6400520: pasted__pasted__pasted__polySurface46
+    6400522: pasted__pasted__polySurface38
+    6400524: pasted__pasted__polySurface39
+    6400526: pasted__pasted__polySurface40
+    6400528: pasted__pasted__polySurface41
+    6400530: pasted__pasted__polySurface42
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -3163,7 +3338,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -3185,7 +3360,7 @@ ModelImporter:
     addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
